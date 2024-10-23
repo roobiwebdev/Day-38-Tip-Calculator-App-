@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <img src="images/logo.svg" class="logo" alt="" />
+    <div class="container">
+      <div class="content">
+        <div class="input-section">
+          <label>Bill</label>
+          <div class="input">
+            <img src="images/icon-dollar.svg" alt="" class="icon" />
+            <input type="" placeholder="0" id="bill" />
+          </div>
+
+          <label for=""> Select Tip %</label>
+          <div class="btns">
+            <button data-value="5" class="five btn">5%</button>
+            <button data-value="10" class="ten btn">10%</button>
+            <button data-value="15" class="fifteen btn">15%</button>
+            <button data-value="25" class="tweentyfive btn">25%</button>
+            <button data-value="50" class="fifty btn">50%</button>
+
+            <input type="text" placeholder="Custom" id="tip" />
+          </div>
+
+          <label for=""> Number of People</label>
+          <div class="input">
+            <img src="images/icon-person.svg" class="icon" alt="" />
+            <input type="text" placeholder="0" id="ppl" />
+          </div>
+        </div>
+
+        <div class="result-section">
+          <div class="amounts">
+            <div class="tip-amount">
+              <h5 class="title">
+                Tip Amount <br />
+                <span>/ person</span>
+              </h5>
+              <h1 class="dollar Tip">$0.00</h1>
+            </div>
+
+            <div class="total-amount">
+              <h5 class="title">
+                Total Amount <br />
+                <span>/ person</span>
+              </h5>
+              <h1 class="dollar Total">$0.00</h1>
+            </div>
+
+            <button class="reset-btn" type="reset">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
